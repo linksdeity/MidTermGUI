@@ -55,6 +55,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Masks.cs" />
+    <Compile Include="PaymentScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentScreen.Designer.cs">
+      <DependentUpon>PaymentScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Potions.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
@@ -64,6 +70,9 @@
     <Compile Include="Validator.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentScreen.resx">
+      <DependentUpon>PaymentScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -104,6 +113,8 @@
     <Content Include="assets\Consumables\Hearts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="assets\images\MaloBanner.bmp" />
+    <None Include="assets\images\bank.png" />
     <Content Include="assets\images\consumables\arrows.png" />
     <Content Include="assets\images\consumables\bombs.png" />
     <Content Include="assets\images\consumables\dekunuts.png" />
@@ -118,6 +129,7 @@
     <Content Include="assets\images\potions\bluepotion.png" />
     <Content Include="assets\images\potions\greenpotion.png" />
     <Content Include="assets\images\potions\redpotion.png" />
+    <None Include="assets\images\Rupees.png" />
     <Content Include="assets\images\shields\hylianshield.png" />
     <Content Include="assets\images\shields\lynelshield.jpg" />
     <Content Include="assets\images\shields\mirrorshield.png" />

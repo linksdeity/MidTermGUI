@@ -16,7 +16,6 @@ namespace MidTermGUI
         public Form1()
         {
             InitializeComponent();
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -25,11 +24,13 @@ namespace MidTermGUI
         }
 
 
-        //SWORD BUTTON
         private void aSwordsButton_Click(object sender, EventArgs e)
         {
+            aItemDescriptionLabel.Text = "";
 
             aCategoryListBox.Items.Clear();
+
+            aCategoryNameLabel.Text = "Swords";
 
             string path = "assets/swords";
 
@@ -69,6 +70,9 @@ namespace MidTermGUI
 
         private void aShieldsButton_Click(object sender, EventArgs e)
         {
+            aItemDescriptionLabel.Text = "";
+
+            aCategoryNameLabel.Text = "Shields";
 
             aCategoryListBox.Items.Clear();
 
@@ -108,6 +112,9 @@ namespace MidTermGUI
 
         private void aPotionsButton_Click(object sender, EventArgs e)
         {
+            aItemDescriptionLabel.Text = "";
+
+            aCategoryNameLabel.Text = "Potions";
 
             aCategoryListBox.Items.Clear();
 
@@ -149,6 +156,9 @@ namespace MidTermGUI
 
         private void aMasksButton_Click(object sender, EventArgs e)
         {
+            aItemDescriptionLabel.Text = "";
+
+            aCategoryNameLabel.Text = "Masks";
 
             aCategoryListBox.Items.Clear();
 
@@ -189,6 +199,9 @@ namespace MidTermGUI
 
         private void aConsumablesButton_Click(object sender, EventArgs e)
         {
+            aItemDescriptionLabel.Text = "";
+
+            aCategoryNameLabel.Text = "Consumables";
 
             aCategoryListBox.Items.Clear();
 
@@ -255,16 +268,71 @@ namespace MidTermGUI
             aTaxCostLabel.Text = "0";
 
             aGrandTotalLabel.Text = "0";
+
+            aItemDescriptionLabel.Text = "";
+
+            aCategoryNameLabel.Text = "";
+
+            aCategoryListBox.Items.Clear();
         }
 
         private void aCategoryListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var selectedItem = (Product) aCategoryListBox.SelectedItem;
 
-            aItemDescriptionLabel.Text = "" + selectedItem.Description;
+            //need to prevent error where no item is sleceted, but an item IS unselected / clear space clicked on with no active selection
+
+            if(aCategoryNameLabel.Text == "Swords")
+            {
+                var newItem = aCategoryListBox.SelectedItem as Swords;
+
+                aItemDescriptionLabel.Text = newItem.Description + "\n\nDamage: " + newItem.Damage + ("\n\nPRICE: " + newItem.Price + " Rupees");
+
+
+            }
+            else if (aCategoryNameLabel.Text == "Shields")
+            {
+                var newItem = aCategoryListBox.SelectedItem as Shields;
+
+                aItemDescriptionLabel.Text = newItem.Description + "\n\nEffect: " + newItem.Effect + ("\n\nPRICE: " + newItem.Price + " Rupees");
+
+            }
+            else if (aCategoryNameLabel.Text == "Potions")
+            {
+                var newItem = aCategoryListBox.SelectedItem as Potions;
+
+                aItemDescriptionLabel.Text = newItem.Description + "\n\nIngrediants: " + newItem.Ingrediants + "\n\nEffect: " + newItem.Effects + ("\n\nPRICE: " + newItem.Price + " Rupees");
+
+            }
+            else if (aCategoryNameLabel.Text == "Masks")
+            {
+                var newItem = aCategoryListBox.SelectedItem as Masks;
+
+                aItemDescriptionLabel.Text = newItem.Description + "\n\nEffect: " + newItem.Effects + "\n\nRumors: " + newItem.Rumors + ("\n\nPRICE: " + newItem.Price + " Rupees");
+
+            }
+            else if (aCategoryNameLabel.Text == "Consumables")
+            {
+                var newItem = aCategoryListBox.SelectedItem as Consumables;
+
+                aItemDescriptionLabel.Text = newItem.Description + "\n\nOther Uses : " + newItem.Additional + "\n\nNeeds Container: " + newItem.NeededContainer + ("\n\nPRICE: " + newItem.Price + " Rupees");
+
+            }
 
 
         }
 
+        private void aCheckoutButton_Click(object sender, EventArgs e)
+        {
+            PaymentScreen payment = new PaymentScreen();
+            payment.Tax = Convert.ToInt32(aTaxCostLabel.Text);
+            payment.Total = Convert.ToInt32(aTotalCostLabel.Text);
+
+            for (int i = 0; i < aShoppingCartList.Items.Count; i++)
+            {
+                payment.ShoppingCart.Add( (Product) aShoppingCartList.Items[i]);
+            }
+
+            payment.Show();
+        }
     }
 }

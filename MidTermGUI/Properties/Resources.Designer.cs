@@ -63,6 +63,16 @@ namespace MidTermGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bank {
+            get {
+                object obj = ResourceManager.GetObject("bank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap malo {
             get {
                 object obj = ResourceManager.GetObject("malo", resourceCulture);
@@ -73,9 +83,29 @@ namespace MidTermGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MaloBanner {
+            get {
+                object obj = ResourceManager.GetObject("MaloBanner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MaloMartLogo {
             get {
                 object obj = ResourceManager.GetObject("MaloMartLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Rupees {
+            get {
+                object obj = ResourceManager.GetObject("Rupees", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -46,15 +46,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.aItemDescriptionLabel = new System.Windows.Forms.Label();
-            this.aItemPictureBox = new System.Windows.Forms.PictureBox();
             this.aAddToCartButton = new System.Windows.Forms.Button();
             this.aShoppingCartList = new System.Windows.Forms.ListBox();
             this.aShoppingCartLabel = new System.Windows.Forms.Label();
-            this.aMaloPicture = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).BeginInit();
+            this.aMaloPicture = new System.Windows.Forms.PictureBox();
+            this.aItemPictureBox = new System.Windows.Forms.PictureBox();
+            this.aCategoryNameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // aTitleLabel
@@ -96,6 +97,7 @@
             this.aCheckoutButton.TabIndex = 3;
             this.aCheckoutButton.Text = "Sell it to meeee!!";
             this.aCheckoutButton.UseVisualStyleBackColor = true;
+            this.aCheckoutButton.Click += new System.EventHandler(this.aCheckoutButton_Click);
             // 
             // aConsumablesButton
             // 
@@ -223,21 +225,13 @@
             // 
             this.aItemDescriptionLabel.Location = new System.Drawing.Point(267, 237);
             this.aItemDescriptionLabel.Name = "aItemDescriptionLabel";
-            this.aItemDescriptionLabel.Size = new System.Drawing.Size(242, 82);
+            this.aItemDescriptionLabel.Size = new System.Drawing.Size(242, 145);
             this.aItemDescriptionLabel.TabIndex = 18;
             this.aItemDescriptionLabel.Text = "Select an item to see a description";
             // 
-            // aItemPictureBox
-            // 
-            this.aItemPictureBox.Location = new System.Drawing.Point(265, 341);
-            this.aItemPictureBox.Name = "aItemPictureBox";
-            this.aItemPictureBox.Size = new System.Drawing.Size(244, 218);
-            this.aItemPictureBox.TabIndex = 19;
-            this.aItemPictureBox.TabStop = false;
-            // 
             // aAddToCartButton
             // 
-            this.aAddToCartButton.Location = new System.Drawing.Point(265, 572);
+            this.aAddToCartButton.Location = new System.Drawing.Point(265, 625);
             this.aAddToCartButton.Name = "aAddToCartButton";
             this.aAddToCartButton.Size = new System.Drawing.Size(244, 36);
             this.aAddToCartButton.TabIndex = 20;
@@ -262,6 +256,15 @@
             this.aShoppingCartLabel.TabIndex = 22;
             this.aShoppingCartLabel.Text = "Shopping Cart:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::MidTermGUI.Properties.Resources.MaloMartLogo;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(164, 163);
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
             // aMaloPicture
             // 
             this.aMaloPicture.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -272,20 +275,28 @@
             this.aMaloPicture.TabIndex = 23;
             this.aMaloPicture.TabStop = false;
             // 
-            // pictureBox1
+            // aItemPictureBox
             // 
-            this.pictureBox1.Image = global::MidTermGUI.Properties.Resources.MaloMartLogo;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 163);
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            this.aItemPictureBox.Location = new System.Drawing.Point(265, 394);
+            this.aItemPictureBox.Name = "aItemPictureBox";
+            this.aItemPictureBox.Size = new System.Drawing.Size(244, 218);
+            this.aItemPictureBox.TabIndex = 19;
+            this.aItemPictureBox.TabStop = false;
+            // 
+            // aCategoryNameLabel
+            // 
+            this.aCategoryNameLabel.AutoSize = true;
+            this.aCategoryNameLabel.Location = new System.Drawing.Point(262, 135);
+            this.aCategoryNameLabel.Name = "aCategoryNameLabel";
+            this.aCategoryNameLabel.Size = new System.Drawing.Size(0, 13);
+            this.aCategoryNameLabel.TabIndex = 25;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1208, 673);
+            this.Controls.Add(this.aCategoryNameLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.aMaloPicture);
             this.Controls.Add(this.aShoppingCartLabel);
@@ -313,9 +324,9 @@
             this.Name = "Form1";
             this.Text = "MALOMART";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,6 +358,7 @@
         private System.Windows.Forms.Label aShoppingCartLabel;
         private System.Windows.Forms.PictureBox aMaloPicture;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label aCategoryNameLabel;
     }
 }
 
