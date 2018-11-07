@@ -244,19 +244,28 @@ namespace MidTermGUI
         private void aAddToCartButton_Click(object sender, EventArgs e)
         {
 
-            if (aCategoryListBox.SelectedIndex != -1)
+            for (int i = 1; i <= aItemNumeric.Value; i++)
             {
-                aShoppingCartList.Items.Add(aCategoryListBox.SelectedItem);
 
 
-                var selectedProduct = (Product)aCategoryListBox.SelectedItem;
 
-                aTotalCostLabel.Text = "" + (Convert.ToInt32(aTotalCostLabel.Text) + selectedProduct.Price);
+                if (aCategoryListBox.SelectedIndex != -1)
+                {
+                    aShoppingCartList.Items.Add(aCategoryListBox.SelectedItem);
 
-                aTaxCostLabel.Text = "" + (int)(Convert.ToInt32(aTotalCostLabel.Text) * 0.06);
 
-                aGrandTotalLabel.Text = "" + (Convert.ToInt32(aTaxCostLabel.Text) + Convert.ToInt32(aTotalCostLabel.Text));
+                    var selectedProduct = (Product)aCategoryListBox.SelectedItem;
+
+                    aTotalCostLabel.Text = "" + (Convert.ToInt32(aTotalCostLabel.Text) + selectedProduct.Price);
+
+                    aTaxCostLabel.Text = "" + (int)(Convert.ToInt32(aTotalCostLabel.Text) * 0.06);
+
+                    aGrandTotalLabel.Text = "" + (Convert.ToInt32(aTaxCostLabel.Text) + Convert.ToInt32(aTotalCostLabel.Text));
+                }
             }
+
+            aItemNumeric.Value = 1;
+
         }
 
         private void aClearCartButton_Click(object sender, EventArgs e)

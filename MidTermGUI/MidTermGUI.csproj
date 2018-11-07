@@ -113,6 +113,7 @@
     <Content Include="assets\Consumables\Hearts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="assets\images\takemyrupees.jpg" />
     <None Include="assets\images\MaloBanner.bmp" />
     <None Include="assets\images\bank.png" />
     <Content Include="assets\images\consumables\arrows.png" />

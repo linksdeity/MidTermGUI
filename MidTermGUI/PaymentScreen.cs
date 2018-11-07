@@ -33,20 +33,51 @@ namespace MidTermGUI
 
         private void aPayWithCheckRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (aPayWithCheckRadioButton.Checked)
+            {
+                aCheckPanel.Enabled = true;
+            }
+            else
+            {
+                aCheckPanel.Enabled = false;
+            }
         }
 
         private void aPayWithRupeesRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(aPayWithRupeesRadioButton.Checked)
+            {
+                aRupeePanel.Enabled = true;
+            }
+            else
+            {
+                aRupeePanel.Enabled = false;
+            }
         }
 
         private void aPayWithCardRadioButton_CheckedChanged(object sender, EventArgs e)
         {
+            if (aPayWithCardRadioButton.Checked)
+            {
+                aCardPanel.Enabled = true;
+            }
+            else
+            {
+                aCardPanel.Enabled = false;
+            }
+        }
+
+        private void aPayWithCheckButton_Click(object sender, EventArgs e)
+        {
 
         }
 
-        private void maskedTextBox7_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void aPayWithRupeesButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aPayWithCardButton_Click(object sender, EventArgs e)
         {
 
         }

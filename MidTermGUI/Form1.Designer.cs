@@ -49,13 +49,15 @@
             this.aAddToCartButton = new System.Windows.Forms.Button();
             this.aShoppingCartList = new System.Windows.Forms.ListBox();
             this.aShoppingCartLabel = new System.Windows.Forms.Label();
+            this.aCategoryNameLabel = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.aMaloPicture = new System.Windows.Forms.PictureBox();
             this.aItemPictureBox = new System.Windows.Forms.PictureBox();
-            this.aCategoryNameLabel = new System.Windows.Forms.Label();
+            this.aItemNumeric = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aItemNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // aTitleLabel
@@ -231,9 +233,9 @@
             // 
             // aAddToCartButton
             // 
-            this.aAddToCartButton.Location = new System.Drawing.Point(265, 625);
+            this.aAddToCartButton.Location = new System.Drawing.Point(325, 624);
             this.aAddToCartButton.Name = "aAddToCartButton";
-            this.aAddToCartButton.Size = new System.Drawing.Size(244, 36);
+            this.aAddToCartButton.Size = new System.Drawing.Size(174, 37);
             this.aAddToCartButton.TabIndex = 20;
             this.aAddToCartButton.Text = "Add to cart";
             this.aAddToCartButton.UseVisualStyleBackColor = true;
@@ -255,6 +257,14 @@
             this.aShoppingCartLabel.Size = new System.Drawing.Size(77, 13);
             this.aShoppingCartLabel.TabIndex = 22;
             this.aShoppingCartLabel.Text = "Shopping Cart:";
+            // 
+            // aCategoryNameLabel
+            // 
+            this.aCategoryNameLabel.AutoSize = true;
+            this.aCategoryNameLabel.Location = new System.Drawing.Point(262, 135);
+            this.aCategoryNameLabel.Name = "aCategoryNameLabel";
+            this.aCategoryNameLabel.Size = new System.Drawing.Size(0, 13);
+            this.aCategoryNameLabel.TabIndex = 25;
             // 
             // pictureBox1
             // 
@@ -283,19 +293,34 @@
             this.aItemPictureBox.TabIndex = 19;
             this.aItemPictureBox.TabStop = false;
             // 
-            // aCategoryNameLabel
+            // aItemNumeric
             // 
-            this.aCategoryNameLabel.AutoSize = true;
-            this.aCategoryNameLabel.Location = new System.Drawing.Point(262, 135);
-            this.aCategoryNameLabel.Name = "aCategoryNameLabel";
-            this.aCategoryNameLabel.Size = new System.Drawing.Size(0, 13);
-            this.aCategoryNameLabel.TabIndex = 25;
+            this.aItemNumeric.Location = new System.Drawing.Point(279, 634);
+            this.aItemNumeric.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.aItemNumeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.aItemNumeric.Name = "aItemNumeric";
+            this.aItemNumeric.Size = new System.Drawing.Size(40, 20);
+            this.aItemNumeric.TabIndex = 26;
+            this.aItemNumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1208, 673);
+            this.Controls.Add(this.aItemNumeric);
             this.Controls.Add(this.aCategoryNameLabel);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.aMaloPicture);
@@ -327,6 +352,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aItemNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,6 +385,7 @@
         private System.Windows.Forms.PictureBox aMaloPicture;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label aCategoryNameLabel;
+        private System.Windows.Forms.NumericUpDown aItemNumeric;
     }
 }
 
