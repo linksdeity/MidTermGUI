@@ -283,6 +283,8 @@ namespace MidTermGUI
             aCategoryNameLabel.Text = "";
 
             aCategoryListBox.Items.Clear();
+
+            aItemNumeric.Value = 1;
         }
 
         private void aCategoryListBox_SelectedIndexChanged(object sender, EventArgs e)

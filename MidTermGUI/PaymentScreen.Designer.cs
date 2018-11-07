@@ -248,6 +248,7 @@
             // 
             // aCreditCarNumberTextBox
             // 
+            this.aCreditCarNumberTextBox.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.aCreditCarNumberTextBox.Location = new System.Drawing.Point(149, 19);
             this.aCreditCarNumberTextBox.Mask = "9999-9999-9999-9999";
             this.aCreditCarNumberTextBox.Name = "aCreditCarNumberTextBox";
@@ -257,7 +258,7 @@
             // 
             // aExpirationDateCheckBox
             // 
-            this.aExpirationDateCheckBox.HidePromptOnLeave = true;
+            this.aExpirationDateCheckBox.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.aExpirationDateCheckBox.Location = new System.Drawing.Point(149, 63);
             this.aExpirationDateCheckBox.Mask = "99/9999";
             this.aExpirationDateCheckBox.Name = "aExpirationDateCheckBox";
@@ -267,6 +268,7 @@
             // 
             // aSecurityCodeTextBox
             // 
+            this.aSecurityCodeTextBox.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.aSecurityCodeTextBox.Location = new System.Drawing.Point(149, 106);
             this.aSecurityCodeTextBox.Mask = "999";
             this.aSecurityCodeTextBox.Name = "aSecurityCodeTextBox";
@@ -287,6 +289,7 @@
             // 
             // aCheckNumberTextBox
             // 
+            this.aCheckNumberTextBox.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.aCheckNumberTextBox.Location = new System.Drawing.Point(141, 47);
             this.aCheckNumberTextBox.Mask = "999999999";
             this.aCheckNumberTextBox.Name = "aCheckNumberTextBox";
@@ -296,6 +299,7 @@
             // 
             // aRoutingNumberTextBox
             // 
+            this.aRoutingNumberTextBox.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.aRoutingNumberTextBox.Location = new System.Drawing.Point(141, 89);
             this.aRoutingNumberTextBox.Mask = "999999999";
             this.aRoutingNumberTextBox.Name = "aRoutingNumberTextBox";
@@ -394,7 +398,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::MidTermGUI.Properties.Resources.MaloBanner;
-            this.pictureBox3.Location = new System.Drawing.Point(449, 12);
+            this.pictureBox3.Location = new System.Drawing.Point(451, 8);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(205, 48);
             this.pictureBox3.TabIndex = 43;

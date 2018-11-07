@@ -229,7 +229,7 @@
             this.aItemDescriptionLabel.Name = "aItemDescriptionLabel";
             this.aItemDescriptionLabel.Size = new System.Drawing.Size(242, 145);
             this.aItemDescriptionLabel.TabIndex = 18;
-            this.aItemDescriptionLabel.Text = "Select an item to see a description";
+            this.aItemDescriptionLabel.Text = "Select an item to see a description!";
             // 
             // aAddToCartButton
             // 
@@ -271,7 +271,7 @@
             this.pictureBox1.Image = global::MidTermGUI.Properties.Resources.MaloMartLogo;
             this.pictureBox1.Location = new System.Drawing.Point(27, 9);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(164, 163);
+            this.pictureBox1.Size = new System.Drawing.Size(160, 159);
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
