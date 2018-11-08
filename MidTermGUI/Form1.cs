@@ -273,7 +273,7 @@ namespace MidTermGUI
         private void aAddToCartButton_Click(object sender, EventArgs e)
         {
 
-            if (Convert.ToInt32(aGrandTotalLabel.Text) > 99999999) ;
+            if (Convert.ToInt32(aGrandTotalLabel.Text) > 99999999)
             {
                 aClearCartButton.PerformClick();
 
