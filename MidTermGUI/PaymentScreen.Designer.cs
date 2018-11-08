@@ -284,7 +284,7 @@
             this.aRupeePayTextBox.HidePromptOnLeave = true;
             this.aRupeePayTextBox.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.aRupeePayTextBox.Location = new System.Drawing.Point(190, 72);
-            this.aRupeePayTextBox.Mask = "99999999";
+            this.aRupeePayTextBox.Mask = "999999999";
             this.aRupeePayTextBox.Name = "aRupeePayTextBox";
             this.aRupeePayTextBox.PromptChar = ' ';
             this.aRupeePayTextBox.Size = new System.Drawing.Size(80, 20);
