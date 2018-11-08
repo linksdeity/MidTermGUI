@@ -16,6 +16,7 @@ namespace MidTermGUI
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -27,6 +28,10 @@ namespace MidTermGUI
         private void aSwordsButton_Click(object sender, EventArgs e)
         {
             aItemDescriptionLabel.Text = "";
+
+            aItemNumeric.Value = 1;
+
+            aItemPictureBox.Image = null;
 
             aCategoryListBox.Items.Clear();
 
@@ -66,11 +71,17 @@ namespace MidTermGUI
                 aCategoryListBox.Items.Add(newSword);
             }
 
+            aLineTotalLabel.Text = "";
+
         }
 
         private void aShieldsButton_Click(object sender, EventArgs e)
         {
             aItemDescriptionLabel.Text = "";
+
+            aItemNumeric.Value = 1;
+
+            aItemPictureBox.Image = null;
 
             aCategoryNameLabel.Text = "Shields";
 
@@ -108,11 +119,17 @@ namespace MidTermGUI
 
                 aCategoryListBox.Items.Add(newShield);
             }
+
+            aLineTotalLabel.Text = "";
         }
 
         private void aPotionsButton_Click(object sender, EventArgs e)
         {
             aItemDescriptionLabel.Text = "";
+
+            aItemNumeric.Value = 1;
+
+            aItemPictureBox.Image = null;
 
             aCategoryNameLabel.Text = "Potions";
 
@@ -152,11 +169,17 @@ namespace MidTermGUI
 
                 aCategoryListBox.Items.Add(newPotion);
             }
+
+            aLineTotalLabel.Text = "";
         }
 
         private void aMasksButton_Click(object sender, EventArgs e)
         {
             aItemDescriptionLabel.Text = "";
+
+            aItemNumeric.Value = 1;
+
+            aItemPictureBox.Image = null;
 
             aCategoryNameLabel.Text = "Masks";
 
@@ -195,11 +218,16 @@ namespace MidTermGUI
 
                 aCategoryListBox.Items.Add(newMask);
             }
+            aLineTotalLabel.Text = "";
         }
 
         private void aConsumablesButton_Click(object sender, EventArgs e)
         {
             aItemDescriptionLabel.Text = "";
+
+            aItemNumeric.Value = 1;
+
+            aItemPictureBox.Image = null;
 
             aCategoryNameLabel.Text = "Consumables";
 
@@ -238,6 +266,7 @@ namespace MidTermGUI
 
                 aCategoryListBox.Items.Add(newConsumable);
             }
+            aLineTotalLabel.Text = "";
         }
 
 
@@ -261,6 +290,8 @@ namespace MidTermGUI
                     aTaxCostLabel.Text = "" + (int)(Convert.ToInt32(aTotalCostLabel.Text) * 0.06);
 
                     aGrandTotalLabel.Text = "" + (Convert.ToInt32(aTaxCostLabel.Text) + Convert.ToInt32(aTotalCostLabel.Text));
+
+                    aLineTotalLabel.Text = "" + selectedProduct.Price;
                 }
             }
 
@@ -271,6 +302,10 @@ namespace MidTermGUI
         private void aClearCartButton_Click(object sender, EventArgs e)
         {
             aShoppingCartList.Items.Clear();
+
+            aLineTotalLabel.Text = "";
+
+            aItemPictureBox.Image = null;
 
             aTotalCostLabel.Text = "0";
 
@@ -294,10 +329,28 @@ namespace MidTermGUI
 
             if(aCategoryNameLabel.Text == "Swords")
             {
+
                 var newItem = aCategoryListBox.SelectedItem as Swords;
 
                 aItemDescriptionLabel.Text = newItem.Description + "\n\nDamage: " + newItem.Damage + ("\n\nPRICE: " + newItem.Price + " Rupees");
 
+                aLineTotalLabel.Text = "" + (newItem.Price * aItemNumeric.Value);
+
+                switch (newItem.Name)
+                {
+                    case "Biggoron's Sword":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.biggoronssword;
+                        break;
+                    case "Butterfly Net":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.butterflynet;
+                        break;
+                    case "Kokiri Sword":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.kokirisword;
+                        break;
+                    case "Master Sword":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.mastersword;
+                        break;
+                }
 
             }
             else if (aCategoryNameLabel.Text == "Shields")
@@ -306,12 +359,45 @@ namespace MidTermGUI
 
                 aItemDescriptionLabel.Text = newItem.Description + "\n\nEffect: " + newItem.Effect + ("\n\nPRICE: " + newItem.Price + " Rupees");
 
+                aLineTotalLabel.Text = "" + (newItem.Price * aItemNumeric.Value);
+
+                switch (newItem.Name)
+                {
+                    case "Hylian Shield":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.hylianshield;
+                        break;
+                    case "Lynel Shield":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.lynelshield;
+                        break;
+                    case "Mirror Shield":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.mirrorshield;
+                        break;
+                    case "Wooden Shield":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.woodshield;
+                        break;
+                }
+
             }
             else if (aCategoryNameLabel.Text == "Potions")
             {
                 var newItem = aCategoryListBox.SelectedItem as Potions;
 
                 aItemDescriptionLabel.Text = newItem.Description + "\n\nIngrediants: " + newItem.Ingrediants + "\n\nEffect: " + newItem.Effects + ("\n\nPRICE: " + newItem.Price + " Rupees");
+
+                aLineTotalLabel.Text = "" + (newItem.Price * aItemNumeric.Value);
+
+                switch (newItem.Name)
+                {
+                    case "Blue Potion":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.bluepotion;
+                        break;
+                    case "Green Potion":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.greenpotion;
+                        break;
+                    case "Red Potion":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.redpotion;
+                        break;
+                }
 
             }
             else if (aCategoryNameLabel.Text == "Masks")
@@ -320,6 +406,24 @@ namespace MidTermGUI
 
                 aItemDescriptionLabel.Text = newItem.Description + "\n\nEffect: " + newItem.Effects + "\n\nRumors: " + newItem.Rumors + ("\n\nPRICE: " + newItem.Price + " Rupees");
 
+                aLineTotalLabel.Text = "" + (newItem.Price * aItemNumeric.Value);
+
+                switch (newItem.Name)
+                {
+                    case "Bunny Hood":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.bunnyhood;
+                        break;
+                    case "Keaton Mask":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.keatonmask;
+                        break;
+                    case "Majora's Mask":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.majorasmask;
+                        break;
+                    case "Mask of Truth":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.maskoftruth;
+                        break;
+                }
+
             }
             else if (aCategoryNameLabel.Text == "Consumables")
             {
@@ -327,23 +431,99 @@ namespace MidTermGUI
 
                 aItemDescriptionLabel.Text = newItem.Description + "\n\nOther Uses : " + newItem.Additional + "\n\nNeeds Container: " + newItem.NeededContainer + ("\n\nPRICE: " + newItem.Price + " Rupees");
 
-            }
+                aLineTotalLabel.Text = "" + (newItem.Price * aItemNumeric.Value);
 
+                switch (newItem.Name)
+                {
+                    case "Arrows (x5)":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.arrows;
+                        break;
+                    case "Bombs (x5)":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.bombs;
+                        break;
+                    case "Deku Seeds (x10)":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.dekunuts;
+                        break;
+                    case "Fairy":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.fairy;
+                        break;
+                    case "Hearts (x3)":
+                        aItemPictureBox.Image = MidTermGUI.Properties.Resources.hearts;
+                        break;
+                }
+
+            }
 
         }
 
         private void aCheckoutButton_Click(object sender, EventArgs e)
         {
-            PaymentScreen payment = new PaymentScreen();
-            payment.Tax = Convert.ToInt32(aTaxCostLabel.Text);
-            payment.Total = Convert.ToInt32(aTotalCostLabel.Text);
 
-            for (int i = 0; i < aShoppingCartList.Items.Count; i++)
+            if (aShoppingCartList.Items.Count == 0)
             {
-                payment.ShoppingCart.Add( (Product) aShoppingCartList.Items[i]);
+                var result = MessageBox.Show("Empty Cart!", "No items in your cart!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
+            {
+                PaymentScreen payment = new PaymentScreen();
+                payment.Tax = Convert.ToInt32(aTaxCostLabel.Text);
+                payment.Total = Convert.ToInt32(aTotalCostLabel.Text);
+
+                for (int i = 0; i < aShoppingCartList.Items.Count; i++)
+                {
+                    payment.ShoppingCart.Add((Product)aShoppingCartList.Items[i]);
+                }
+
+                payment.Show();
+
+                aClearCartButton.PerformClick();
+
+                aItemPictureBox.Image = null;
+            }
+        }
+
+        private void aMusicButton_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"assets\Audio\malomarttheme.wav");
+            player.PlayLooping();
+        }
+
+        private void aItemPictureBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aItemNumeric_ValueChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var selectedProduct = aCategoryListBox.SelectedItem as Product;
+
+                aLineTotalLabel.Text = "" + (selectedProduct.Price * aItemNumeric.Value);
+            }
+            catch
+            {
+                aLineTotalLabel.Text = "";
             }
 
-            payment.Show();
+
+        }
+
+        private void aDeleteButton_Click(object sender, EventArgs e)
+        {
+            aShoppingCartList.Items.Remove(aShoppingCartList.SelectedItem);
+        }
+
+        private void aShoppingCartList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (aShoppingCartList.SelectedItem != null)
+            {
+                aDeleteButton.Enabled = true;
+            }
+            else
+            {
+                aDeleteButton.Enabled = false;
+            }
         }
     }
 }

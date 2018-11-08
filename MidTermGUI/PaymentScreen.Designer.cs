@@ -286,6 +286,7 @@
             this.aRupeePayTextBox.PromptChar = ' ';
             this.aRupeePayTextBox.Size = new System.Drawing.Size(80, 20);
             this.aRupeePayTextBox.TabIndex = 35;
+            this.aRupeePayTextBox.TextChanged += new System.EventHandler(this.getChange);
             // 
             // aCheckNumberTextBox
             // 

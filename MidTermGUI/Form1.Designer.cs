@@ -50,21 +50,25 @@
             this.aShoppingCartList = new System.Windows.Forms.ListBox();
             this.aShoppingCartLabel = new System.Windows.Forms.Label();
             this.aCategoryNameLabel = new System.Windows.Forms.Label();
+            this.aItemNumeric = new System.Windows.Forms.NumericUpDown();
+            this.aMusicButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.aMaloPicture = new System.Windows.Forms.PictureBox();
             this.aItemPictureBox = new System.Windows.Forms.PictureBox();
-            this.aItemNumeric = new System.Windows.Forms.NumericUpDown();
+            this.aLineTotalLabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.aDeleteButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.aItemNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aItemNumeric)).BeginInit();
             this.SuspendLayout();
             // 
             // aTitleLabel
             // 
             this.aTitleLabel.AutoSize = true;
             this.aTitleLabel.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aTitleLabel.Location = new System.Drawing.Point(253, 9);
+            this.aTitleLabel.Location = new System.Drawing.Point(222, 8);
             this.aTitleLabel.Name = "aTitleLabel";
             this.aTitleLabel.Size = new System.Drawing.Size(691, 67);
             this.aTitleLabel.TabIndex = 0;
@@ -93,7 +97,7 @@
             // aCheckoutButton
             // 
             this.aCheckoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aCheckoutButton.Location = new System.Drawing.Point(655, 601);
+            this.aCheckoutButton.Location = new System.Drawing.Point(565, 601);
             this.aCheckoutButton.Name = "aCheckoutButton";
             this.aCheckoutButton.Size = new System.Drawing.Size(541, 60);
             this.aCheckoutButton.TabIndex = 3;
@@ -144,7 +148,7 @@
             // aCategoryListBox
             // 
             this.aCategoryListBox.FormattingEnabled = true;
-            this.aCategoryListBox.Location = new System.Drawing.Point(265, 151);
+            this.aCategoryListBox.Location = new System.Drawing.Point(265, 120);
             this.aCategoryListBox.Name = "aCategoryListBox";
             this.aCategoryListBox.Size = new System.Drawing.Size(244, 69);
             this.aCategoryListBox.TabIndex = 8;
@@ -153,7 +157,7 @@
             // aTotalCostLabel
             // 
             this.aTotalCostLabel.AutoSize = true;
-            this.aTotalCostLabel.Location = new System.Drawing.Point(652, 572);
+            this.aTotalCostLabel.Location = new System.Drawing.Point(576, 574);
             this.aTotalCostLabel.Name = "aTotalCostLabel";
             this.aTotalCostLabel.Size = new System.Drawing.Size(13, 13);
             this.aTotalCostLabel.TabIndex = 10;
@@ -162,7 +166,7 @@
             // aTaxCostLabel
             // 
             this.aTaxCostLabel.AutoSize = true;
-            this.aTaxCostLabel.Location = new System.Drawing.Point(752, 572);
+            this.aTaxCostLabel.Location = new System.Drawing.Point(676, 574);
             this.aTaxCostLabel.Name = "aTaxCostLabel";
             this.aTaxCostLabel.Size = new System.Drawing.Size(13, 13);
             this.aTaxCostLabel.TabIndex = 11;
@@ -171,7 +175,7 @@
             // aGrandTotalLabel
             // 
             this.aGrandTotalLabel.AutoSize = true;
-            this.aGrandTotalLabel.Location = new System.Drawing.Point(849, 572);
+            this.aGrandTotalLabel.Location = new System.Drawing.Point(773, 574);
             this.aGrandTotalLabel.Name = "aGrandTotalLabel";
             this.aGrandTotalLabel.Size = new System.Drawing.Size(13, 13);
             this.aGrandTotalLabel.TabIndex = 12;
@@ -188,18 +192,18 @@
             // 
             // aClearCartButton
             // 
-            this.aClearCartButton.Location = new System.Drawing.Point(1130, 504);
+            this.aClearCartButton.Location = new System.Drawing.Point(1025, 503);
             this.aClearCartButton.Name = "aClearCartButton";
             this.aClearCartButton.Size = new System.Drawing.Size(66, 27);
             this.aClearCartButton.TabIndex = 14;
-            this.aClearCartButton.Text = "clear cart";
+            this.aClearCartButton.Text = "Clear Cart";
             this.aClearCartButton.UseVisualStyleBackColor = true;
             this.aClearCartButton.Click += new System.EventHandler(this.aClearCartButton_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(652, 555);
+            this.label1.Location = new System.Drawing.Point(576, 557);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(34, 13);
             this.label1.TabIndex = 15;
@@ -208,7 +212,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(752, 555);
+            this.label2.Location = new System.Drawing.Point(676, 557);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 16;
@@ -217,7 +221,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(849, 555);
+            this.label3.Location = new System.Drawing.Point(773, 557);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 17;
@@ -225,9 +229,10 @@
             // 
             // aItemDescriptionLabel
             // 
-            this.aItemDescriptionLabel.Location = new System.Drawing.Point(267, 237);
+            this.aItemDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aItemDescriptionLabel.Location = new System.Drawing.Point(267, 192);
             this.aItemDescriptionLabel.Name = "aItemDescriptionLabel";
-            this.aItemDescriptionLabel.Size = new System.Drawing.Size(242, 145);
+            this.aItemDescriptionLabel.Size = new System.Drawing.Size(242, 190);
             this.aItemDescriptionLabel.TabIndex = 18;
             this.aItemDescriptionLabel.Text = "Select an item to see a description!";
             // 
@@ -244,10 +249,11 @@
             // aShoppingCartList
             // 
             this.aShoppingCartList.FormattingEnabled = true;
-            this.aShoppingCartList.Location = new System.Drawing.Point(933, 137);
+            this.aShoppingCartList.Location = new System.Drawing.Point(952, 136);
             this.aShoppingCartList.Name = "aShoppingCartList";
-            this.aShoppingCartList.Size = new System.Drawing.Size(262, 342);
+            this.aShoppingCartList.Size = new System.Drawing.Size(118, 342);
             this.aShoppingCartList.TabIndex = 21;
+            this.aShoppingCartList.SelectedIndexChanged += new System.EventHandler(this.aShoppingCartList_SelectedIndexChanged);
             // 
             // aShoppingCartLabel
             // 
@@ -261,10 +267,43 @@
             // aCategoryNameLabel
             // 
             this.aCategoryNameLabel.AutoSize = true;
-            this.aCategoryNameLabel.Location = new System.Drawing.Point(262, 135);
+            this.aCategoryNameLabel.Location = new System.Drawing.Point(267, 88);
             this.aCategoryNameLabel.Name = "aCategoryNameLabel";
             this.aCategoryNameLabel.Size = new System.Drawing.Size(0, 13);
             this.aCategoryNameLabel.TabIndex = 25;
+            // 
+            // aItemNumeric
+            // 
+            this.aItemNumeric.Location = new System.Drawing.Point(279, 634);
+            this.aItemNumeric.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.aItemNumeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.aItemNumeric.Name = "aItemNumeric";
+            this.aItemNumeric.Size = new System.Drawing.Size(40, 20);
+            this.aItemNumeric.TabIndex = 26;
+            this.aItemNumeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.aItemNumeric.ValueChanged += new System.EventHandler(this.aItemNumeric_ValueChanged);
+            // 
+            // aMusicButton
+            // 
+            this.aMusicButton.Image = global::MidTermGUI.Properties.Resources.musicmaker;
+            this.aMusicButton.Location = new System.Drawing.Point(952, 9);
+            this.aMusicButton.Name = "aMusicButton";
+            this.aMusicButton.Size = new System.Drawing.Size(154, 89);
+            this.aMusicButton.TabIndex = 27;
+            this.aMusicButton.UseVisualStyleBackColor = true;
+            this.aMusicButton.Click += new System.EventHandler(this.aMusicButton_Click);
             // 
             // pictureBox1
             // 
@@ -290,36 +329,47 @@
             this.aItemPictureBox.Location = new System.Drawing.Point(265, 394);
             this.aItemPictureBox.Name = "aItemPictureBox";
             this.aItemPictureBox.Size = new System.Drawing.Size(244, 218);
+            this.aItemPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.aItemPictureBox.TabIndex = 19;
             this.aItemPictureBox.TabStop = false;
+            this.aItemPictureBox.Click += new System.EventHandler(this.aItemPictureBox_Click);
             // 
-            // aItemNumeric
+            // aLineTotalLabel
             // 
-            this.aItemNumeric.Location = new System.Drawing.Point(279, 634);
-            this.aItemNumeric.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.aItemNumeric.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.aItemNumeric.Name = "aItemNumeric";
-            this.aItemNumeric.Size = new System.Drawing.Size(40, 20);
-            this.aItemNumeric.TabIndex = 26;
-            this.aItemNumeric.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.aLineTotalLabel.Location = new System.Drawing.Point(385, 664);
+            this.aLineTotalLabel.Name = "aLineTotalLabel";
+            this.aLineTotalLabel.Size = new System.Drawing.Size(177, 13);
+            this.aLineTotalLabel.TabIndex = 28;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(322, 664);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Line Price:";
+            // 
+            // aDeleteButton
+            // 
+            this.aDeleteButton.Enabled = false;
+            this.aDeleteButton.Location = new System.Drawing.Point(941, 503);
+            this.aDeleteButton.Name = "aDeleteButton";
+            this.aDeleteButton.Size = new System.Drawing.Size(66, 27);
+            this.aDeleteButton.TabIndex = 30;
+            this.aDeleteButton.Text = "Delete";
+            this.aDeleteButton.UseVisualStyleBackColor = true;
+            this.aDeleteButton.Click += new System.EventHandler(this.aDeleteButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1208, 673);
+            this.ClientSize = new System.Drawing.Size(1124, 700);
+            this.Controls.Add(this.aDeleteButton);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.aLineTotalLabel);
+            this.Controls.Add(this.aMusicButton);
             this.Controls.Add(this.aItemNumeric);
             this.Controls.Add(this.aCategoryNameLabel);
             this.Controls.Add(this.pictureBox1);
@@ -349,10 +399,10 @@
             this.Name = "Form1";
             this.Text = "MALOMART";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.aItemNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aItemNumeric)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,6 +436,10 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label aCategoryNameLabel;
         private System.Windows.Forms.NumericUpDown aItemNumeric;
+        private System.Windows.Forms.Button aMusicButton;
+        private System.Windows.Forms.Label aLineTotalLabel;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button aDeleteButton;
     }
 }
 

@@ -54,6 +54,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Itemizer.cs" />
     <Compile Include="Masks.cs" />
     <Compile Include="PaymentScreen.cs">
       <SubType>Form</SubType>
@@ -65,6 +66,7 @@
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Receipt.cs" />
     <Compile Include="Shields.cs" />
     <Compile Include="Swords.cs" />
     <Compile Include="Validator.cs" />
@@ -98,6 +100,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\Audio\malomarttheme.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="assets\Consumables\Arrows.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -116,29 +121,73 @@
     <None Include="assets\images\takemyrupees.jpg" />
     <None Include="assets\images\MaloBanner.bmp" />
     <None Include="assets\images\bank.png" />
-    <Content Include="assets\images\consumables\arrows.png" />
-    <Content Include="assets\images\consumables\bombs.png" />
-    <Content Include="assets\images\consumables\dekunuts.png" />
-    <Content Include="assets\images\consumables\fairy.jpg" />
-    <Content Include="assets\images\consumables\hearts.png" />
+    <Content Include="assets\images\banker.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\consumables\arrows.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\consumables\bombs.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\consumables\dekunuts.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\consumables\fairy.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\consumables\hearts.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="assets\images\malo.bmp" />
     <Content Include="assets\images\MaloMartLogo.png" />
-    <Content Include="assets\images\masks\bunnyhood.png" />
-    <Content Include="assets\images\masks\keatonmask.png" />
-    <Content Include="assets\images\masks\majorasmask.png" />
-    <Content Include="assets\images\masks\maskoftruth.png" />
-    <Content Include="assets\images\potions\bluepotion.png" />
-    <Content Include="assets\images\potions\greenpotion.png" />
-    <Content Include="assets\images\potions\redpotion.png" />
+    <Content Include="assets\images\masks\bunnyhood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\masks\keatonmask.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\masks\majorasmask.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\masks\maskoftruth.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="assets\images\musicmaker.png" />
+    <Content Include="assets\images\potions\bluepotion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\potions\greenpotion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\potions\redpotion.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="assets\images\Rupees.png" />
-    <Content Include="assets\images\shields\hylianshield.png" />
-    <Content Include="assets\images\shields\lynelshield.jpg" />
-    <Content Include="assets\images\shields\mirrorshield.png" />
-    <Content Include="assets\images\shields\woodshield.png" />
-    <Content Include="assets\images\swords\biggoronssword.png" />
-    <Content Include="assets\images\swords\butterflynet.jpg" />
-    <Content Include="assets\images\swords\kokirisword.png" />
-    <Content Include="assets\images\swords\mastersword.png" />
+    <Content Include="assets\images\shields\hylianshield.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\shields\lynelshield.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\shields\mirrorshield.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\shields\woodshield.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\swords\biggoronssword.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\swords\butterflynet.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\swords\kokirisword.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\images\swords\mastersword.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="assets\Masks\BunnyHood.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -185,8 +234,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="assets\Audio\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

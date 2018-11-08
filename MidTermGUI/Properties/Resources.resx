@@ -118,22 +118,88 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="musicmaker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\musicmaker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MaloBanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\MaloBanner.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rupees" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\Rupees.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="takemyrupees" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\takemyrupees.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="malo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\images\malo.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\images\bank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Rupees" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\images\Rupees.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="MaloBanner" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\images\MaloBanner.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="MaloMartLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\assets\images\MaloMartLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="takemyrupees" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\assets\images\takemyrupees.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="biggoronssword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\swords\biggoronssword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="butterflynet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\swords\butterflynet.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kokirisword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\swords\kokirisword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mastersword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\swords\mastersword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hylianshield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\shields\hylianshield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lynelshield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\shields\lynelshield.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mirrorshield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\shields\mirrorshield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="woodshield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\shields\woodshield.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bluepotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\potions\bluepotion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="greenpotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\potions\greenpotion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="redpotion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\potions\redpotion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bunnyhood" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\masks\bunnyhood.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="keatonmask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\masks\keatonmask.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="majorasmask" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\masks\majorasmask.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="maskoftruth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\masks\maskoftruth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrows" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\consumables\arrows.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bombs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\consumables\bombs.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dekunuts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\consumables\dekunuts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fairy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\consumables\fairy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hearts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\consumables\hearts.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\assets\images\banker.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
