@@ -69,7 +69,6 @@
     <Compile Include="Receipt.cs" />
     <Compile Include="Shields.cs" />
     <Compile Include="Swords.cs" />
-    <Compile Include="Validator.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +117,7 @@
     <Content Include="assets\Consumables\Hearts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\ConfettiTime.png" />
     <None Include="Resources\treasurechest.png" />
     <None Include="Resources\resizeditems.jpg" />
     <None Include="Resources\masks.jpg" />

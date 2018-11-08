@@ -143,6 +143,16 @@ namespace MidTermGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ConfettiTime {
+            get {
+                object obj = ResourceManager.GetObject("ConfettiTime", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dekunuts {
             get {
                 object obj = ResourceManager.GetObject("dekunuts", resourceCulture);

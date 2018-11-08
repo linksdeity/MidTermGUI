@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.aTitleLabel = new System.Windows.Forms.Label();
             this.aSubTitalLabel = new System.Windows.Forms.Label();
             this.aCheckoutButton = new System.Windows.Forms.Button();
@@ -53,6 +54,7 @@
             this.aMasksButton = new System.Windows.Forms.Button();
             this.aConsumablesButton = new System.Windows.Forms.Button();
             this.aSwordsButton = new System.Windows.Forms.Button();
+            this.aTitleTimer = new System.Windows.Forms.Timer(this.components);
             this.aMusicButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.aMaloPicture = new System.Windows.Forms.PictureBox();
@@ -66,10 +68,10 @@
             // aTitleLabel
             // 
             this.aTitleLabel.AutoSize = true;
-            this.aTitleLabel.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aTitleLabel.Location = new System.Drawing.Point(222, 8);
+            this.aTitleLabel.Font = new System.Drawing.Font("Cooper Black", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aTitleLabel.Location = new System.Drawing.Point(211, 14);
             this.aTitleLabel.Name = "aTitleLabel";
-            this.aTitleLabel.Size = new System.Drawing.Size(691, 67);
+            this.aTitleLabel.Size = new System.Drawing.Size(723, 55);
             this.aTitleLabel.TabIndex = 0;
             this.aTitleLabel.Text = "WELCOME TO MALO MART!!";
             // 
@@ -77,7 +79,7 @@
             // 
             this.aSubTitalLabel.AutoSize = true;
             this.aSubTitalLabel.Font = new System.Drawing.Font("Monotype Corsiva", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aSubTitalLabel.Location = new System.Drawing.Point(487, 76);
+            this.aSubTitalLabel.Location = new System.Drawing.Point(483, 76);
             this.aSubTitalLabel.Name = "aSubTitalLabel";
             this.aSubTitalLabel.Size = new System.Drawing.Size(174, 25);
             this.aSubTitalLabel.TabIndex = 1;
@@ -85,7 +87,7 @@
             // 
             // aCheckoutButton
             // 
-            this.aCheckoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aCheckoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aCheckoutButton.Location = new System.Drawing.Point(565, 601);
             this.aCheckoutButton.Name = "aCheckoutButton";
             this.aCheckoutButton.Size = new System.Drawing.Size(541, 60);
@@ -178,6 +180,7 @@
             // 
             // aAddToCartButton
             // 
+            this.aAddToCartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aAddToCartButton.Location = new System.Drawing.Point(325, 624);
             this.aAddToCartButton.Name = "aAddToCartButton";
             this.aAddToCartButton.Size = new System.Drawing.Size(174, 37);
@@ -198,7 +201,7 @@
             // aShoppingCartLabel
             // 
             this.aShoppingCartLabel.AutoSize = true;
-            this.aShoppingCartLabel.Location = new System.Drawing.Point(930, 120);
+            this.aShoppingCartLabel.Location = new System.Drawing.Point(965, 120);
             this.aShoppingCartLabel.Name = "aShoppingCartLabel";
             this.aShoppingCartLabel.Size = new System.Drawing.Size(77, 13);
             this.aShoppingCartLabel.TabIndex = 22;
@@ -207,7 +210,7 @@
             // aCategoryNameLabel
             // 
             this.aCategoryNameLabel.AutoSize = true;
-            this.aCategoryNameLabel.Location = new System.Drawing.Point(267, 88);
+            this.aCategoryNameLabel.Location = new System.Drawing.Point(267, 104);
             this.aCategoryNameLabel.Name = "aCategoryNameLabel";
             this.aCategoryNameLabel.Size = new System.Drawing.Size(0, 13);
             this.aCategoryNameLabel.TabIndex = 25;
@@ -264,6 +267,7 @@
             // 
             // aShieldsButton
             // 
+            this.aShieldsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aShieldsButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.aShieldsButton.Location = new System.Drawing.Point(27, 273);
             this.aShieldsButton.Name = "aShieldsButton";
@@ -275,6 +279,7 @@
             // 
             // aPotionsButton
             // 
+            this.aPotionsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aPotionsButton.Location = new System.Drawing.Point(27, 368);
             this.aPotionsButton.Name = "aPotionsButton";
             this.aPotionsButton.Size = new System.Drawing.Size(217, 89);
@@ -285,6 +290,7 @@
             // 
             // aMasksButton
             // 
+            this.aMasksButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aMasksButton.Location = new System.Drawing.Point(27, 463);
             this.aMasksButton.Name = "aMasksButton";
             this.aMasksButton.Size = new System.Drawing.Size(217, 82);
@@ -295,6 +301,7 @@
             // 
             // aConsumablesButton
             // 
+            this.aConsumablesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aConsumablesButton.Location = new System.Drawing.Point(27, 551);
             this.aConsumablesButton.Name = "aConsumablesButton";
             this.aConsumablesButton.Size = new System.Drawing.Size(217, 85);
@@ -305,6 +312,7 @@
             // 
             // aSwordsButton
             // 
+            this.aSwordsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aSwordsButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.aSwordsButton.Location = new System.Drawing.Point(27, 174);
             this.aSwordsButton.Name = "aSwordsButton";
@@ -313,6 +321,11 @@
             this.aSwordsButton.Text = "SWORDS";
             this.aSwordsButton.UseVisualStyleBackColor = true;
             this.aSwordsButton.Click += new System.EventHandler(this.aSwordsButton_Click);
+            // 
+            // aTitleTimer
+            // 
+            this.aTitleTimer.Interval = 500;
+            this.aTitleTimer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // aMusicButton
             // 
@@ -431,6 +444,7 @@
         private System.Windows.Forms.Label aLineTotalLabel;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button aDeleteButton;
+        private System.Windows.Forms.Timer aTitleTimer;
     }
 }
 

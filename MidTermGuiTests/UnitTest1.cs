@@ -11,7 +11,7 @@ namespace MidTermGuiTests
     public class UnitTest1
     {
         [TestMethod]
-        public void CountDuplicatesTest_GiveDuplicatesAndSIngleItems_WillPrintThemGrouped()
+        public void CountDuplicatesTest_GiveDuplicatesAndSingleItems_WillPrintThemGrouped()
         {
             Swords testSword = new Swords();
             testSword.Name = "testSword";

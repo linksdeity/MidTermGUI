@@ -273,6 +273,13 @@ namespace MidTermGUI
         private void aAddToCartButton_Click(object sender, EventArgs e)
         {
 
+            if(Convert.ToInt32(aGrandTotalLabel.Text) > 2000000000)
+            {
+                aClearCartButton.PerformClick();
+
+                var result = MessageBox.Show( "We don't have that much in stock of anything!\n\nCLEARING CART!", "Are you crazy?", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
             for (int i = 1; i <= aItemNumeric.Value; i++)
             {
 
@@ -322,7 +329,7 @@ namespace MidTermGUI
             aItemNumeric.Value = 1;
         }
 
-        public void aCategoryListBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void aCategoryListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
             try
@@ -466,7 +473,7 @@ namespace MidTermGUI
 
             if (aShoppingCartList.Items.Count == 0)
             {
-                var result = MessageBox.Show("Empty Cart!", "No items in your cart!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                var result = MessageBox.Show( "No items in your cart!", "Empty Cart!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
             else
             {
@@ -493,6 +500,7 @@ namespace MidTermGUI
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"assets\Audio\malomarttheme.wav");
             player.PlayLooping();
+            aTitleTimer.Enabled = true;
         }
 
         private void aItemPictureBox_Click(object sender, EventArgs e)
@@ -531,6 +539,20 @@ namespace MidTermGUI
             {
                 aDeleteButton.Enabled = false;
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Random myRand = new Random();
+
+            int red = myRand.Next(1, 256);
+            int green = myRand.Next(1, 256);
+            int blue = myRand.Next(1, 256);
+
+            aTitleLabel.ForeColor = Color.FromArgb(red, green, blue);
+
+            aCheckoutButton.ForeColor = Color.FromArgb(red, green, blue);
+
         }
     }
 }

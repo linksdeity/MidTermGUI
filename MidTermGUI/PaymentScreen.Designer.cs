@@ -58,15 +58,15 @@
             this.aRupeePanel = new System.Windows.Forms.Panel();
             this.aCardPanel = new System.Windows.Forms.Panel();
             this.aCheckPanel = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.aRupeePanel.SuspendLayout();
             this.aCardPanel.SuspendLayout();
             this.aCheckPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -281,7 +281,7 @@
             this.aRupeePayTextBox.HidePromptOnLeave = true;
             this.aRupeePayTextBox.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Insert;
             this.aRupeePayTextBox.Location = new System.Drawing.Point(190, 72);
-            this.aRupeePayTextBox.Mask = "999999999999";
+            this.aRupeePayTextBox.Mask = "99999999";
             this.aRupeePayTextBox.Name = "aRupeePayTextBox";
             this.aRupeePayTextBox.PromptChar = ' ';
             this.aRupeePayTextBox.Size = new System.Drawing.Size(80, 20);
@@ -376,15 +376,14 @@
             this.aCheckPanel.Size = new System.Drawing.Size(593, 164);
             this.aCheckPanel.TabIndex = 45;
             // 
-            // pictureBox2
+            // pictureBox3
             // 
-            this.pictureBox2.Image = global::MidTermGUI.Properties.Resources.bank;
-            this.pictureBox2.Location = new System.Drawing.Point(727, 330);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(297, 328);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 42;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox3.Image = global::MidTermGUI.Properties.Resources.MaloBanner;
+            this.pictureBox3.Location = new System.Drawing.Point(451, 8);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(205, 48);
+            this.pictureBox3.TabIndex = 43;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -396,14 +395,15 @@
             this.pictureBox1.TabIndex = 41;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBox2
             // 
-            this.pictureBox3.Image = global::MidTermGUI.Properties.Resources.MaloBanner;
-            this.pictureBox3.Location = new System.Drawing.Point(451, 8);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(205, 48);
-            this.pictureBox3.TabIndex = 43;
-            this.pictureBox3.TabStop = false;
+            this.pictureBox2.Image = global::MidTermGUI.Properties.Resources.bank;
+            this.pictureBox2.Location = new System.Drawing.Point(727, 330);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(297, 328);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 42;
+            this.pictureBox2.TabStop = false;
             // 
             // PaymentScreen
             // 
@@ -437,9 +437,9 @@
             this.aCardPanel.PerformLayout();
             this.aCheckPanel.ResumeLayout(false);
             this.aCheckPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
