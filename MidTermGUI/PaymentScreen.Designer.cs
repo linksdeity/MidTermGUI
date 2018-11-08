@@ -425,6 +425,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximumSize = new System.Drawing.Size(1061, 721);
+            this.MinimumSize = new System.Drawing.Size(1061, 721);
             this.Name = "PaymentScreen";
             this.Text = "PaymentScreen";
             this.Load += new System.EventHandler(this.PaymentScreen_Load);

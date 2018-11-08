@@ -30,17 +30,11 @@
         {
             this.aTitleLabel = new System.Windows.Forms.Label();
             this.aSubTitalLabel = new System.Windows.Forms.Label();
-            this.aSwordsButton = new System.Windows.Forms.Button();
             this.aCheckoutButton = new System.Windows.Forms.Button();
-            this.aConsumablesButton = new System.Windows.Forms.Button();
-            this.aMasksButton = new System.Windows.Forms.Button();
-            this.aPotionsButton = new System.Windows.Forms.Button();
-            this.aShieldsButton = new System.Windows.Forms.Button();
             this.aCategoryListBox = new System.Windows.Forms.ListBox();
             this.aTotalCostLabel = new System.Windows.Forms.Label();
             this.aTaxCostLabel = new System.Windows.Forms.Label();
             this.aGrandTotalLabel = new System.Windows.Forms.Label();
-            this.aCategoryLabel = new System.Windows.Forms.Label();
             this.aClearCartButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -51,13 +45,18 @@
             this.aShoppingCartLabel = new System.Windows.Forms.Label();
             this.aCategoryNameLabel = new System.Windows.Forms.Label();
             this.aItemNumeric = new System.Windows.Forms.NumericUpDown();
+            this.aLineTotalLabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.aDeleteButton = new System.Windows.Forms.Button();
+            this.aShieldsButton = new System.Windows.Forms.Button();
+            this.aPotionsButton = new System.Windows.Forms.Button();
+            this.aMasksButton = new System.Windows.Forms.Button();
+            this.aConsumablesButton = new System.Windows.Forms.Button();
+            this.aSwordsButton = new System.Windows.Forms.Button();
             this.aMusicButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.aMaloPicture = new System.Windows.Forms.PictureBox();
             this.aItemPictureBox = new System.Windows.Forms.PictureBox();
-            this.aLineTotalLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.aDeleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.aItemNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).BeginInit();
@@ -84,16 +83,6 @@
             this.aSubTitalLabel.TabIndex = 1;
             this.aSubTitalLabel.Text = "Hyrule\'s #1 outlet!";
             // 
-            // aSwordsButton
-            // 
-            this.aSwordsButton.Location = new System.Drawing.Point(27, 214);
-            this.aSwordsButton.Name = "aSwordsButton";
-            this.aSwordsButton.Size = new System.Drawing.Size(175, 73);
-            this.aSwordsButton.TabIndex = 2;
-            this.aSwordsButton.Text = "SWORDS";
-            this.aSwordsButton.UseVisualStyleBackColor = true;
-            this.aSwordsButton.Click += new System.EventHandler(this.aSwordsButton_Click);
-            // 
             // aCheckoutButton
             // 
             this.aCheckoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,46 +93,6 @@
             this.aCheckoutButton.Text = "Sell it to meeee!!";
             this.aCheckoutButton.UseVisualStyleBackColor = true;
             this.aCheckoutButton.Click += new System.EventHandler(this.aCheckoutButton_Click);
-            // 
-            // aConsumablesButton
-            // 
-            this.aConsumablesButton.Location = new System.Drawing.Point(27, 588);
-            this.aConsumablesButton.Name = "aConsumablesButton";
-            this.aConsumablesButton.Size = new System.Drawing.Size(175, 73);
-            this.aConsumablesButton.TabIndex = 4;
-            this.aConsumablesButton.Text = "CONSUMABLES";
-            this.aConsumablesButton.UseVisualStyleBackColor = true;
-            this.aConsumablesButton.Click += new System.EventHandler(this.aConsumablesButton_Click);
-            // 
-            // aMasksButton
-            // 
-            this.aMasksButton.Location = new System.Drawing.Point(25, 497);
-            this.aMasksButton.Name = "aMasksButton";
-            this.aMasksButton.Size = new System.Drawing.Size(175, 73);
-            this.aMasksButton.TabIndex = 5;
-            this.aMasksButton.Text = "MASKS";
-            this.aMasksButton.UseVisualStyleBackColor = true;
-            this.aMasksButton.Click += new System.EventHandler(this.aMasksButton_Click);
-            // 
-            // aPotionsButton
-            // 
-            this.aPotionsButton.Location = new System.Drawing.Point(25, 404);
-            this.aPotionsButton.Name = "aPotionsButton";
-            this.aPotionsButton.Size = new System.Drawing.Size(175, 73);
-            this.aPotionsButton.TabIndex = 6;
-            this.aPotionsButton.Text = "POTIONS";
-            this.aPotionsButton.UseVisualStyleBackColor = true;
-            this.aPotionsButton.Click += new System.EventHandler(this.aPotionsButton_Click);
-            // 
-            // aShieldsButton
-            // 
-            this.aShieldsButton.Location = new System.Drawing.Point(27, 309);
-            this.aShieldsButton.Name = "aShieldsButton";
-            this.aShieldsButton.Size = new System.Drawing.Size(175, 73);
-            this.aShieldsButton.TabIndex = 7;
-            this.aShieldsButton.Text = "SHIELDS";
-            this.aShieldsButton.UseVisualStyleBackColor = true;
-            this.aShieldsButton.Click += new System.EventHandler(this.aShieldsButton_Click);
             // 
             // aCategoryListBox
             // 
@@ -180,15 +129,6 @@
             this.aGrandTotalLabel.Size = new System.Drawing.Size(13, 13);
             this.aGrandTotalLabel.TabIndex = 12;
             this.aGrandTotalLabel.Text = "0";
-            // 
-            // aCategoryLabel
-            // 
-            this.aCategoryLabel.AutoSize = true;
-            this.aCategoryLabel.Location = new System.Drawing.Point(24, 189);
-            this.aCategoryLabel.Name = "aCategoryLabel";
-            this.aCategoryLabel.Size = new System.Drawing.Size(155, 13);
-            this.aCategoryLabel.TabIndex = 13;
-            this.aCategoryLabel.Text = "Press a button to see the items!";
             // 
             // aClearCartButton
             // 
@@ -295,6 +235,85 @@
             0});
             this.aItemNumeric.ValueChanged += new System.EventHandler(this.aItemNumeric_ValueChanged);
             // 
+            // aLineTotalLabel
+            // 
+            this.aLineTotalLabel.Location = new System.Drawing.Point(385, 664);
+            this.aLineTotalLabel.Name = "aLineTotalLabel";
+            this.aLineTotalLabel.Size = new System.Drawing.Size(177, 13);
+            this.aLineTotalLabel.TabIndex = 28;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(322, 664);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(57, 13);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Line Price:";
+            // 
+            // aDeleteButton
+            // 
+            this.aDeleteButton.Enabled = false;
+            this.aDeleteButton.Location = new System.Drawing.Point(941, 503);
+            this.aDeleteButton.Name = "aDeleteButton";
+            this.aDeleteButton.Size = new System.Drawing.Size(66, 27);
+            this.aDeleteButton.TabIndex = 30;
+            this.aDeleteButton.Text = "Delete";
+            this.aDeleteButton.UseVisualStyleBackColor = true;
+            this.aDeleteButton.Click += new System.EventHandler(this.aDeleteButton_Click);
+            // 
+            // aShieldsButton
+            // 
+            this.aShieldsButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.aShieldsButton.Location = new System.Drawing.Point(27, 273);
+            this.aShieldsButton.Name = "aShieldsButton";
+            this.aShieldsButton.Size = new System.Drawing.Size(217, 89);
+            this.aShieldsButton.TabIndex = 7;
+            this.aShieldsButton.Text = "SHIELDS";
+            this.aShieldsButton.UseVisualStyleBackColor = true;
+            this.aShieldsButton.Click += new System.EventHandler(this.aShieldsButton_Click);
+            // 
+            // aPotionsButton
+            // 
+            this.aPotionsButton.Location = new System.Drawing.Point(27, 368);
+            this.aPotionsButton.Name = "aPotionsButton";
+            this.aPotionsButton.Size = new System.Drawing.Size(217, 89);
+            this.aPotionsButton.TabIndex = 6;
+            this.aPotionsButton.Text = "POTIONS";
+            this.aPotionsButton.UseVisualStyleBackColor = true;
+            this.aPotionsButton.Click += new System.EventHandler(this.aPotionsButton_Click);
+            // 
+            // aMasksButton
+            // 
+            this.aMasksButton.Location = new System.Drawing.Point(27, 463);
+            this.aMasksButton.Name = "aMasksButton";
+            this.aMasksButton.Size = new System.Drawing.Size(217, 82);
+            this.aMasksButton.TabIndex = 5;
+            this.aMasksButton.Text = "MASKS";
+            this.aMasksButton.UseVisualStyleBackColor = true;
+            this.aMasksButton.Click += new System.EventHandler(this.aMasksButton_Click);
+            // 
+            // aConsumablesButton
+            // 
+            this.aConsumablesButton.Location = new System.Drawing.Point(27, 551);
+            this.aConsumablesButton.Name = "aConsumablesButton";
+            this.aConsumablesButton.Size = new System.Drawing.Size(217, 85);
+            this.aConsumablesButton.TabIndex = 4;
+            this.aConsumablesButton.Text = "CONSUMABLES";
+            this.aConsumablesButton.UseVisualStyleBackColor = true;
+            this.aConsumablesButton.Click += new System.EventHandler(this.aConsumablesButton_Click);
+            // 
+            // aSwordsButton
+            // 
+            this.aSwordsButton.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.aSwordsButton.Location = new System.Drawing.Point(27, 174);
+            this.aSwordsButton.Name = "aSwordsButton";
+            this.aSwordsButton.Size = new System.Drawing.Size(217, 93);
+            this.aSwordsButton.TabIndex = 2;
+            this.aSwordsButton.Text = "SWORDS";
+            this.aSwordsButton.UseVisualStyleBackColor = true;
+            this.aSwordsButton.Click += new System.EventHandler(this.aSwordsButton_Click);
+            // 
             // aMusicButton
             // 
             this.aMusicButton.Image = global::MidTermGUI.Properties.Resources.musicmaker;
@@ -334,38 +353,11 @@
             this.aItemPictureBox.TabStop = false;
             this.aItemPictureBox.Click += new System.EventHandler(this.aItemPictureBox_Click);
             // 
-            // aLineTotalLabel
-            // 
-            this.aLineTotalLabel.Location = new System.Drawing.Point(385, 664);
-            this.aLineTotalLabel.Name = "aLineTotalLabel";
-            this.aLineTotalLabel.Size = new System.Drawing.Size(177, 13);
-            this.aLineTotalLabel.TabIndex = 28;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(322, 664);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Line Price:";
-            // 
-            // aDeleteButton
-            // 
-            this.aDeleteButton.Enabled = false;
-            this.aDeleteButton.Location = new System.Drawing.Point(941, 503);
-            this.aDeleteButton.Name = "aDeleteButton";
-            this.aDeleteButton.Size = new System.Drawing.Size(66, 27);
-            this.aDeleteButton.TabIndex = 30;
-            this.aDeleteButton.Text = "Delete";
-            this.aDeleteButton.UseVisualStyleBackColor = true;
-            this.aDeleteButton.Click += new System.EventHandler(this.aDeleteButton_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 700);
+            this.ClientSize = new System.Drawing.Size(1124, 686);
             this.Controls.Add(this.aDeleteButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.aLineTotalLabel);
@@ -383,7 +375,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.aClearCartButton);
-            this.Controls.Add(this.aCategoryLabel);
             this.Controls.Add(this.aGrandTotalLabel);
             this.Controls.Add(this.aTaxCostLabel);
             this.Controls.Add(this.aTotalCostLabel);
@@ -396,6 +387,7 @@
             this.Controls.Add(this.aSwordsButton);
             this.Controls.Add(this.aSubTitalLabel);
             this.Controls.Add(this.aTitleLabel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "MALOMART";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -422,7 +414,6 @@
         private System.Windows.Forms.Label aTotalCostLabel;
         private System.Windows.Forms.Label aTaxCostLabel;
         private System.Windows.Forms.Label aGrandTotalLabel;
-        private System.Windows.Forms.Label aCategoryLabel;
         private System.Windows.Forms.Button aClearCartButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

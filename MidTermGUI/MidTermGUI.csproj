@@ -118,6 +118,13 @@
     <Content Include="assets\Consumables\Hearts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\treasurechest.png" />
+    <None Include="Resources\resizeditems.jpg" />
+    <None Include="Resources\masks.jpg" />
+    <None Include="Resources\resizedpotions.jpg" />
+    <None Include="Resources\resizedshieldsjpg.jpg" />
+    <None Include="Resources\resizedswords.jpg" />
+    <None Include="Resources\swords.jpg" />
     <None Include="assets\images\takemyrupees.jpg" />
     <None Include="assets\images\MaloBanner.bmp" />
     <None Include="assets\images\bank.png" />

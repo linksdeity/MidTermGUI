@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MidTermGUI
 {
-    class Swords : Product
+    public class Swords : Product
     {
         public string Damage { get; set; }
 
