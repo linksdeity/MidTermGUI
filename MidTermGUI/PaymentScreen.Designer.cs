@@ -61,12 +61,14 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.aRupeePanel.SuspendLayout();
             this.aCardPanel.SuspendLayout();
             this.aCheckPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -103,7 +105,7 @@
             // 
             this.aPayWithCardRadioButton.AutoSize = true;
             this.aPayWithCardRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aPayWithCardRadioButton.Location = new System.Drawing.Point(19, 330);
+            this.aPayWithCardRadioButton.Location = new System.Drawing.Point(10, 384);
             this.aPayWithCardRadioButton.Name = "aPayWithCardRadioButton";
             this.aPayWithCardRadioButton.Size = new System.Drawing.Size(59, 17);
             this.aPayWithCardRadioButton.TabIndex = 3;
@@ -116,7 +118,7 @@
             this.aPayWithRupeesRadioButton.AutoSize = true;
             this.aPayWithRupeesRadioButton.Checked = true;
             this.aPayWithRupeesRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aPayWithRupeesRadioButton.Location = new System.Drawing.Point(15, 145);
+            this.aPayWithRupeesRadioButton.Location = new System.Drawing.Point(10, 158);
             this.aPayWithRupeesRadioButton.Name = "aPayWithRupeesRadioButton";
             this.aPayWithRupeesRadioButton.Size = new System.Drawing.Size(75, 17);
             this.aPayWithRupeesRadioButton.TabIndex = 4;
@@ -129,7 +131,7 @@
             // 
             this.aPayWithCheckRadioButton.AutoSize = true;
             this.aPayWithCheckRadioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aPayWithCheckRadioButton.Location = new System.Drawing.Point(19, 561);
+            this.aPayWithCheckRadioButton.Location = new System.Drawing.Point(15, 588);
             this.aPayWithCheckRadioButton.Name = "aPayWithCheckRadioButton";
             this.aPayWithCheckRadioButton.Size = new System.Drawing.Size(66, 17);
             this.aPayWithCheckRadioButton.TabIndex = 5;
@@ -404,18 +406,29 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::MidTermGUI.Properties.Resources.bank;
-            this.pictureBox2.Location = new System.Drawing.Point(727, 330);
+            this.pictureBox2.Location = new System.Drawing.Point(725, 327);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(297, 328);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 42;
             this.pictureBox2.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MidTermGUI.Properties.Resources.rupee;
+            this.pictureBox4.Location = new System.Drawing.Point(226, 9);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(45, 61);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 46;
+            this.pictureBox4.TabStop = false;
+            // 
             // PaymentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 682);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.aCardPanel);
             this.Controls.Add(this.aCheckPanel);
             this.Controls.Add(this.pictureBox3);
@@ -446,6 +459,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,5 +500,6 @@
         private System.Windows.Forms.Panel aRupeePanel;
         private System.Windows.Forms.Panel aCardPanel;
         private System.Windows.Forms.Panel aCheckPanel;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

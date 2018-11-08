@@ -55,14 +55,20 @@
             this.aConsumablesButton = new System.Windows.Forms.Button();
             this.aSwordsButton = new System.Windows.Forms.Button();
             this.aTitleTimer = new System.Windows.Forms.Timer(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.aMusicButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.aMaloPicture = new System.Windows.Forms.PictureBox();
             this.aItemPictureBox = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.aItemNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // aTitleLabel
@@ -119,7 +125,7 @@
             // 
             this.aTaxCostLabel.AutoSize = true;
             this.aTaxCostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aTaxCostLabel.Location = new System.Drawing.Point(676, 574);
+            this.aTaxCostLabel.Location = new System.Drawing.Point(726, 575);
             this.aTaxCostLabel.Name = "aTaxCostLabel";
             this.aTaxCostLabel.Size = new System.Drawing.Size(14, 13);
             this.aTaxCostLabel.TabIndex = 11;
@@ -129,7 +135,7 @@
             // 
             this.aGrandTotalLabel.AutoSize = true;
             this.aGrandTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aGrandTotalLabel.Location = new System.Drawing.Point(773, 574);
+            this.aGrandTotalLabel.Location = new System.Drawing.Point(875, 576);
             this.aGrandTotalLabel.Name = "aGrandTotalLabel";
             this.aGrandTotalLabel.Size = new System.Drawing.Size(14, 13);
             this.aGrandTotalLabel.TabIndex = 12;
@@ -137,6 +143,7 @@
             // 
             // aClearCartButton
             // 
+            this.aClearCartButton.Enabled = false;
             this.aClearCartButton.Location = new System.Drawing.Point(1025, 503);
             this.aClearCartButton.Name = "aClearCartButton";
             this.aClearCartButton.Size = new System.Drawing.Size(66, 27);
@@ -157,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(676, 557);
+            this.label2.Location = new System.Drawing.Point(726, 558);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 16;
@@ -166,7 +173,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(773, 557);
+            this.label3.Location = new System.Drawing.Point(875, 558);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 17;
@@ -174,10 +181,10 @@
             // 
             // aItemDescriptionLabel
             // 
-            this.aItemDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.aItemDescriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aItemDescriptionLabel.Location = new System.Drawing.Point(267, 192);
             this.aItemDescriptionLabel.Name = "aItemDescriptionLabel";
-            this.aItemDescriptionLabel.Size = new System.Drawing.Size(242, 190);
+            this.aItemDescriptionLabel.Size = new System.Drawing.Size(242, 199);
             this.aItemDescriptionLabel.TabIndex = 18;
             this.aItemDescriptionLabel.Text = "Select an item to see a description!";
             // 
@@ -331,6 +338,16 @@
             this.aTitleTimer.Interval = 500;
             this.aTitleTimer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::MidTermGUI.Properties.Resources.rupee;
+            this.pictureBox2.Location = new System.Drawing.Point(651, 556);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(23, 29);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 31;
+            this.pictureBox2.TabStop = false;
+            // 
             // aMusicButton
             // 
             this.aMusicButton.Image = global::MidTermGUI.Properties.Resources.musicmaker;
@@ -371,11 +388,34 @@
             this.aItemPictureBox.TabStop = false;
             this.aItemPictureBox.Click += new System.EventHandler(this.aItemPictureBox_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::MidTermGUI.Properties.Resources.rupee;
+            this.pictureBox3.Location = new System.Drawing.Point(800, 557);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 29);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 32;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::MidTermGUI.Properties.Resources.rupee;
+            this.pictureBox4.Location = new System.Drawing.Point(968, 558);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(23, 29);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 33;
+            this.pictureBox4.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1124, 686);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.aDeleteButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.aLineTotalLabel);
@@ -411,9 +451,12 @@
             this.Text = "MALOMART";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.aItemNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aMaloPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aItemPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -451,6 +494,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button aDeleteButton;
         private System.Windows.Forms.Timer aTitleTimer;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }
 

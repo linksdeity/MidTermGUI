@@ -117,6 +117,7 @@
     <Content Include="assets\Consumables\Hearts.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\rupee.png" />
     <None Include="Resources\ConfettiTime.png" />
     <None Include="Resources\treasurechest.png" />
     <None Include="Resources\resizeditems.jpg" />

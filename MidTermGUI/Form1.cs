@@ -281,6 +281,11 @@ namespace MidTermGUI
 
             aItemNumeric.Value = 1;
 
+            if(aShoppingCartList.Items.Count > 0)
+            {
+                aClearCartButton.Enabled = true;
+            }
+
         }
 
         private void aClearCartButton_Click(object sender, EventArgs e)
@@ -304,6 +309,10 @@ namespace MidTermGUI
             aCategoryListBox.Items.Clear();
 
             aItemNumeric.Value = 1;
+
+            aClearCartButton.Enabled = false;
+
+            aDeleteButton.Enabled = false;
         }
 
         private void aCategoryListBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -524,6 +533,12 @@ namespace MidTermGUI
         private void aDeleteButton_Click(object sender, EventArgs e)
         {
             aShoppingCartList.Items.Remove(aShoppingCartList.SelectedItem);
+
+            if (aShoppingCartList.Items.Count == 0)
+            {
+                aDeleteButton.Enabled = false;
+                aClearCartButton.Enabled = false;
+            }
         }
 
         private void aShoppingCartList_SelectedIndexChanged(object sender, EventArgs e)
@@ -531,10 +546,21 @@ namespace MidTermGUI
             if (aShoppingCartList.SelectedItem != null)
             {
                 aDeleteButton.Enabled = true;
+                aClearCartButton.Enabled = true;
             }
             else
             {
                 aDeleteButton.Enabled = false;
+
+                if (aShoppingCartList.Items.Count == 0)
+                {
+                    aClearCartButton.Enabled = false;
+                }
+                else
+                {
+                    aClearCartButton.Enabled = true;
+                }
+
             }
         }
 

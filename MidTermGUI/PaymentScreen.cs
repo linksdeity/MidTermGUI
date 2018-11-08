@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace MidTermGUI
 {
@@ -108,7 +109,7 @@ namespace MidTermGUI
             DateTime tempDate;
             DateTime.TryParse(aExpirationDateCheckBox.Text, out tempDate);
 
-            if (aCreditCarNumberTextBox.Text.Length == 19)
+            if (Regex.IsMatch(aCreditCarNumberTextBox.Text, "[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"))
             {
                 if(tempDate >= DateTime.Now)
                 {
@@ -135,9 +136,6 @@ namespace MidTermGUI
                 var result = MessageBox.Show("Please check your card information!!", "Incorrect Card Number", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
 
-
-
-
         }
 
         private void getChange(object sender, EventArgs e)
@@ -159,6 +157,7 @@ namespace MidTermGUI
             {
                 aChangeLabel.Text = "0";
             }
+
         }
     }
 }

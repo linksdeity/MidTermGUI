@@ -373,6 +373,16 @@ namespace MidTermGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap rupee {
+            get {
+                object obj = ResourceManager.GetObject("rupee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rupees {
             get {
                 object obj = ResourceManager.GetObject("Rupees", resourceCulture);
