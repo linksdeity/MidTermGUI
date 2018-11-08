@@ -108,27 +108,30 @@
             // aTotalCostLabel
             // 
             this.aTotalCostLabel.AutoSize = true;
+            this.aTotalCostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aTotalCostLabel.Location = new System.Drawing.Point(576, 574);
             this.aTotalCostLabel.Name = "aTotalCostLabel";
-            this.aTotalCostLabel.Size = new System.Drawing.Size(13, 13);
+            this.aTotalCostLabel.Size = new System.Drawing.Size(14, 13);
             this.aTotalCostLabel.TabIndex = 10;
             this.aTotalCostLabel.Text = "0";
             // 
             // aTaxCostLabel
             // 
             this.aTaxCostLabel.AutoSize = true;
+            this.aTaxCostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aTaxCostLabel.Location = new System.Drawing.Point(676, 574);
             this.aTaxCostLabel.Name = "aTaxCostLabel";
-            this.aTaxCostLabel.Size = new System.Drawing.Size(13, 13);
+            this.aTaxCostLabel.Size = new System.Drawing.Size(14, 13);
             this.aTaxCostLabel.TabIndex = 11;
             this.aTaxCostLabel.Text = "0";
             // 
             // aGrandTotalLabel
             // 
             this.aGrandTotalLabel.AutoSize = true;
+            this.aGrandTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aGrandTotalLabel.Location = new System.Drawing.Point(773, 574);
             this.aGrandTotalLabel.Name = "aGrandTotalLabel";
-            this.aGrandTotalLabel.Size = new System.Drawing.Size(13, 13);
+            this.aGrandTotalLabel.Size = new System.Drawing.Size(14, 13);
             this.aGrandTotalLabel.TabIndex = 12;
             this.aGrandTotalLabel.Text = "0";
             // 
@@ -240,6 +243,7 @@
             // 
             // aLineTotalLabel
             // 
+            this.aLineTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aLineTotalLabel.Location = new System.Drawing.Point(385, 664);
             this.aLineTotalLabel.Name = "aLineTotalLabel";
             this.aLineTotalLabel.Size = new System.Drawing.Size(177, 13);

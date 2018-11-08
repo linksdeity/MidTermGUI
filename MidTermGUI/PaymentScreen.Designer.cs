@@ -311,27 +311,30 @@
             // aCheckoutTotalLabel
             // 
             this.aCheckoutTotalLabel.AutoSize = true;
+            this.aCheckoutTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aCheckoutTotalLabel.Location = new System.Drawing.Point(136, 8);
             this.aCheckoutTotalLabel.Name = "aCheckoutTotalLabel";
-            this.aCheckoutTotalLabel.Size = new System.Drawing.Size(13, 13);
+            this.aCheckoutTotalLabel.Size = new System.Drawing.Size(14, 13);
             this.aCheckoutTotalLabel.TabIndex = 38;
             this.aCheckoutTotalLabel.Text = "0";
             // 
             // aCheckOutGrandTotalLabel
             // 
             this.aCheckOutGrandTotalLabel.AutoSize = true;
+            this.aCheckOutGrandTotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aCheckOutGrandTotalLabel.Location = new System.Drawing.Point(136, 56);
             this.aCheckOutGrandTotalLabel.Name = "aCheckOutGrandTotalLabel";
-            this.aCheckOutGrandTotalLabel.Size = new System.Drawing.Size(13, 13);
+            this.aCheckOutGrandTotalLabel.Size = new System.Drawing.Size(14, 13);
             this.aCheckOutGrandTotalLabel.TabIndex = 39;
             this.aCheckOutGrandTotalLabel.Text = "0";
             // 
             // aCheckOutTaxLabel
             // 
             this.aCheckOutTaxLabel.AutoSize = true;
+            this.aCheckOutTaxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.aCheckOutTaxLabel.Location = new System.Drawing.Point(136, 32);
             this.aCheckOutTaxLabel.Name = "aCheckOutTaxLabel";
-            this.aCheckOutTaxLabel.Size = new System.Drawing.Size(13, 13);
+            this.aCheckOutTaxLabel.Size = new System.Drawing.Size(14, 13);
             this.aCheckOutTaxLabel.TabIndex = 40;
             this.aCheckOutTaxLabel.Text = "0";
             // 
