@@ -362,6 +362,7 @@
             // 
             // aItemPictureBox
             // 
+            this.aItemPictureBox.Image = global::MidTermGUI.Properties.Resources.treasurechest;
             this.aItemPictureBox.Location = new System.Drawing.Point(265, 394);
             this.aItemPictureBox.Name = "aItemPictureBox";
             this.aItemPictureBox.Size = new System.Drawing.Size(244, 218);
@@ -404,6 +405,7 @@
             this.Controls.Add(this.aSwordsButton);
             this.Controls.Add(this.aSubTitalLabel);
             this.Controls.Add(this.aTitleLabel);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "MALOMART";

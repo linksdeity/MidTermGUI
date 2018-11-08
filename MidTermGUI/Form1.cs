@@ -27,13 +27,8 @@ namespace MidTermGUI
 
         private void aSwordsButton_Click(object sender, EventArgs e)
         {
-            aItemDescriptionLabel.Text = "";
 
-            aItemNumeric.Value = 1;
-
-            aItemPictureBox.Image = null;
-
-            aCategoryListBox.Items.Clear();
+            ResetMainMenu();
 
             aCategoryNameLabel.Text = "Swords";
 
@@ -77,15 +72,11 @@ namespace MidTermGUI
 
         private void aShieldsButton_Click(object sender, EventArgs e)
         {
-            aItemDescriptionLabel.Text = "";
 
-            aItemNumeric.Value = 1;
-
-            aItemPictureBox.Image = null;
+            ResetMainMenu();
 
             aCategoryNameLabel.Text = "Shields";
 
-            aCategoryListBox.Items.Clear();
 
             string path = "assets/shields";
 
@@ -125,15 +116,11 @@ namespace MidTermGUI
 
         private void aPotionsButton_Click(object sender, EventArgs e)
         {
-            aItemDescriptionLabel.Text = "";
 
-            aItemNumeric.Value = 1;
-
-            aItemPictureBox.Image = null;
+            ResetMainMenu();
 
             aCategoryNameLabel.Text = "Potions";
 
-            aCategoryListBox.Items.Clear();
 
             string path = "assets/potions";
 
@@ -175,15 +162,10 @@ namespace MidTermGUI
 
         private void aMasksButton_Click(object sender, EventArgs e)
         {
-            aItemDescriptionLabel.Text = "";
 
-            aItemNumeric.Value = 1;
-
-            aItemPictureBox.Image = null;
+            ResetMainMenu();
 
             aCategoryNameLabel.Text = "Masks";
-
-            aCategoryListBox.Items.Clear();
 
             string path = "assets/masks";
 
@@ -223,15 +205,10 @@ namespace MidTermGUI
 
         private void aConsumablesButton_Click(object sender, EventArgs e)
         {
-            aItemDescriptionLabel.Text = "";
 
-            aItemNumeric.Value = 1;
-
-            aItemPictureBox.Image = null;
+            ResetMainMenu();
 
             aCategoryNameLabel.Text = "Consumables";
-
-            aCategoryListBox.Items.Clear();
 
             string path = "assets/consumables";
 
@@ -312,7 +289,7 @@ namespace MidTermGUI
 
             aLineTotalLabel.Text = "";
 
-            aItemPictureBox.Image = null;
+            aItemPictureBox.Image = MidTermGUI.Properties.Resources.treasurechest;
 
             aTotalCostLabel.Text = "0";
 
@@ -493,6 +470,7 @@ namespace MidTermGUI
                 aItemPictureBox.Image = null;
 
                 aDeleteButton.Enabled = false;
+
             }
         }
 
@@ -501,6 +479,25 @@ namespace MidTermGUI
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"assets\Audio\malomarttheme.wav");
             player.PlayLooping();
             aTitleTimer.Enabled = true;
+
+            aSwordsButton.BackColor = Color.Magenta;
+            aShieldsButton.BackColor = Color.LimeGreen;
+            aMasksButton.BackColor = Color.Red;
+            aPotionsButton.BackColor = Color.Yellow;
+            aConsumablesButton.BackColor = Color.Turquoise;
+
+            this.BackColor = Color.Purple;
+
+            aCategoryListBox.BackColor = Color.PowderBlue;
+            aShoppingCartList.BackColor = Color.PeachPuff;
+            aAddToCartButton.BackColor = Color.DarkViolet;
+            aCheckoutButton.BackColor = Color.DarkViolet;
+
+            aDeleteButton.BackColor = Color.LightPink;
+            aClearCartButton.BackColor = Color.Red;
+
+            aItemNumeric.BackColor = Color.YellowGreen;
+
         }
 
         private void aItemPictureBox_Click(object sender, EventArgs e)
@@ -553,6 +550,21 @@ namespace MidTermGUI
 
             aCheckoutButton.ForeColor = Color.FromArgb(red, green, blue);
 
+            aAddToCartButton.ForeColor = Color.FromArgb(red,green,blue);
+
         }
+
+
+        public void ResetMainMenu()
+        {
+            aItemDescriptionLabel.Text = "";
+
+            aItemNumeric.Value = 1;
+
+            aItemPictureBox.Image = MidTermGUI.Properties.Resources.treasurechest;
+
+            aCategoryListBox.Items.Clear();
+        }
+
     }
 }
