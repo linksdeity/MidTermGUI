@@ -48,6 +48,12 @@
   <ItemGroup>
     <Compile Include="CategoryHelper.cs" />
     <Compile Include="Consumables.cs" />
+    <Compile Include="EasterEgg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EasterEgg.Designer.cs">
+      <DependentUpon>EasterEgg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     <Compile Include="Receipt.cs" />
     <Compile Include="Shields.cs" />
     <Compile Include="Swords.cs" />
+    <EmbeddedResource Include="EasterEgg.resx">
+      <DependentUpon>EasterEgg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

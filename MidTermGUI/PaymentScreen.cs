@@ -159,5 +159,12 @@ namespace MidTermGUI
             }
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            EasterEgg easterEgg = new EasterEgg();
+
+            easterEgg.Show();
+        }
     }
 }
