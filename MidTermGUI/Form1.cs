@@ -476,7 +476,7 @@ namespace MidTermGUI
 
                 aClearCartButton.PerformClick();
 
-                aItemPictureBox.Image = null;
+                aItemPictureBox.Image = MidTermGUI.Properties.Resources.treasurechest;
 
                 aDeleteButton.Enabled = false;
 
