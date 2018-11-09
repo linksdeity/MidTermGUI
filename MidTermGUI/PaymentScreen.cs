@@ -70,7 +70,7 @@ namespace MidTermGUI
 
         private void aPayWithCheckButton_Click(object sender, EventArgs e)
         {
-            if(aCheckNumberTextBox.Text.Length == 9 && aRoutingNumberTextBox.Text.Length == 9)
+            if(Regex.IsMatch(aCheckNumberTextBox.Text, @"[0-9]{9}") && Regex.IsMatch(aRoutingNumberTextBox.Text,@"[0-9]{9}"))
             {
                 Receipt.PrintReceipt(Convert.ToInt32(aCheckOutGrandTotalLabel.Text), ShoppingCart, aCheckNumberTextBox.Text);
                 this.Close();

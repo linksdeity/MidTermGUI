@@ -539,6 +539,22 @@ namespace MidTermGUI
                 aDeleteButton.Enabled = false;
                 aClearCartButton.Enabled = false;
             }
+
+            int newPRICE = 0;
+
+            foreach(Product product in aShoppingCartList.Items)
+            {
+                newPRICE += product.Price;
+            }
+
+            aTotalCostLabel.Text = "" + newPRICE;
+
+            aTaxCostLabel.Text = "" + Convert.ToInt32((Convert.ToInt32(aTotalCostLabel.Text) * 0.06));
+
+
+            aGrandTotalLabel.Text = "" + (Convert.ToInt32(aTotalCostLabel.Text) + Convert.ToInt32(aTaxCostLabel.Text));
+
+
         }
 
         private void aShoppingCartList_SelectedIndexChanged(object sender, EventArgs e)
